@@ -14,11 +14,10 @@ function App() {
       <BrowserRouter>
         <Navbar />
           <Routes>
-          
-            <Route path='/' element={<Home />} />
             <Route path='/Menu' element={<Menu />} />
             <Route path='/About' element={<About />} />
             <Route path='/Contact' element={<Contact />} />
+            <Route index element={<Home />} />
           </Routes>
         <Footer />
       </BrowserRouter>
